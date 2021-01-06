@@ -1,0 +1,36 @@
+@import "./variable";
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+button{
+    cursor: pointer;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    color:chartreuse;
+    background:rgb(61, 61, 190);
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0 0.3rem rgba(52, 200, 22, 0.65);
+}
+
+button:hover{
+    filter : brightness(125%);
+}
+
+button:active{
+    transform: translate(0,0.3rem);
+    box-shadow: 0 0.1rem rgba($backgroundColor,0.65);
+}
+
+.quote-tweet:hover{
+    color: #38a1f3;
+}
+
+.fa-twitter{
+    font-size: 1.5rem;
+}
