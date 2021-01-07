@@ -76,7 +76,7 @@ button {
   border-radius: 10px;
   border: none;
   color: chartreuse;
-  background: #3d3dbe;
+  background: #74040d;
   outline: none;
   padding: 0.5rem 1.8rem;
   -webkit-box-shadow: 0 0.3rem rgba(52, 200, 22, 0.65);
@@ -101,6 +101,40 @@ button:active {
 
 .fa-twitter {
   font-size: 1.5rem;
+}
+
+.loader {
+  border: 16px solid #8892b0;
+  /* Light grey */
+  border-top: 16px solid #172a45;
+  /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 1000px) {
